@@ -1,0 +1,27 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "baar"
+version = "1.0.0"
+description = "Boundary-Aware Attention Refinement for Ultrasound Image Segmentation"
+readme = "README.md"
+requires-python = ">=3.11"
+dependencies = [
+    "torch==2.5.1",
+    "torchvision==0.20.1",
+    "timm==1.0.19",
+    "numpy>=1.26,<3",
+    "opencv-python-headless>=4.9,<5",
+]
+
+[project.scripts]
+baar = "baar.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.setuptools.package-data]
+"baar._backbones" = ["licenses/*.txt"]
+

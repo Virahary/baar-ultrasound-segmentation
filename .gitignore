@@ -1,0 +1,18 @@
+# Publish only source, configuration, documentation, and upstream licenses.
+*
+!/.gitignore
+!/.gitattributes
+!/README.md
+!/THIRD_PARTY_NOTICES.md
+!/pyproject.toml
+!/configs/
+!/configs/baar.json
+!/src/
+!/src/baar/
+!/src/baar/*.py
+!/src/baar/_backbones/
+!/src/baar/_backbones/*.py
+!/src/baar/_backbones/licenses/
+!/src/baar/_backbones/licenses/*.txt
+!/tests/
+!/tests/test_baar.py

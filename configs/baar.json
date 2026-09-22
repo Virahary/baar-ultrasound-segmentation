@@ -1,0 +1,29 @@
+{
+  "model": {
+    "hidden_channels": 16,
+    "candidate_radius": 4,
+    "action_temperature": 1,
+    "crossing_margin": 0.25,
+    "max_logit_delta": 6,
+    "attention_context": true,
+    "attention_grid_size": 16,
+    "attention_projection_dim": 32,
+    "attention_num_heads": 4,
+    "attention_boundary_radius": 2,
+    "attention_threshold": 0.5,
+    "attention_dropout": 0.1,
+    "attention_branch_channels": 4,
+    "attention_alpha_init": 0.1,
+    "hard_local_support": true,
+    "attention_self_attention_enabled": true,
+    "attention_cross_attention_enabled": true
+  },
+  "loss": {
+    "dice": 0.4,
+    "gt_band_dice": 0.3,
+    "bce": 0.2,
+    "distance_field": 0.1,
+    "gt_band_radius": 3,
+    "max_distance": 10
+  }
+}
